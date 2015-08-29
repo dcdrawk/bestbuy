@@ -1,0 +1,70 @@
+/*
+Error: File to import not found or unreadable: foundation/functions.
+        on line 58 of scss/_settings.scss
+        from line 1 of scss/app.scss
+
+53: body{
+54:   background-color: $light-grey;
+55: }
+56: 
+57: body, h1, h2, h3, p, .button{
+58:   color: $primary-color;
+59:   font-family: $open-sans;
+60: }
+61: 
+62: h1{
+63:   font-weight:700;
+
+Backtrace:
+scss/_settings.scss:58
+scss/app.scss:1
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/import_node.rb:67:in `rescue in import'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/import_node.rb:45:in `import'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/import_node.rb:28:in `imported_file'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/import_node.rb:37:in `css_import?'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/base.rb:36:in `visit'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/stack.rb:79:in `block in with_base'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/stack.rb:115:in `with_frame'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/stack.rb:79:in `with_base'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:158:in `visit'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:326:in `block (2 levels) in visit_import'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:326:in `map'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/stack.rb:88:in `block in with_import'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/stack.rb:115:in `with_frame'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/stack.rb:88:in `with_import'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/base.rb:36:in `visit'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/stack.rb:79:in `block in with_base'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/stack.rb:115:in `with_frame'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/stack.rb:79:in `with_base'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:158:in `visit'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/base.rb:52:in `map'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/base.rb:36:in `visit'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:157:in `visit'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:8:in `visit'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/root_node.rb:36:in `css_tree'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/root_node.rb:20:in `render'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/engine.rb:278:in `render'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/exec/sass_scss.rb:418:in `run'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/exec/sass_scss.rb:63:in `process_result'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/exec/base.rb:52:in `parse'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/lib/sass/exec/base.rb:19:in `parse!'
+c:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.17/bin/sass:13:in `<top (required)>'
+c:/Ruby21/bin/sass:23:in `load'
+c:/Ruby21/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: foundation/functions.\A         on line 58 of scss/_settings.scss\A         from line 1 of scss/app.scss\A \A 53: body{\A 54:   background-color: $light-grey;\A 55: }\A 56: \A 57: body, h1, h2, h3, p, .button{\A 58:   color: $primary-color;\A 59:   font-family: $open-sans;\A 60: }\A 61: \A 62: h1{\A 63:   font-weight:700;"; }

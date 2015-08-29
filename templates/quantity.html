@@ -1,0 +1,5 @@
+<h2 class="phone-price">${{price*quantity+$root.protectionPlan | number : 2}}</h2>
+<button href="#" data-dropdown="quant" aria-controls="quantity" aria-expanded="false" class="button dropdown">{{quantity}}</button><br>
+<ul id="quant" data-dropdown-content class="f-dropdown" aria-hidden="true">
+  <li ng-repeat="i in getNumber(max) track by $index"><a href="#a" ng-click="setQuantity($index+1)">{{$index+1}}</a></li>
+</ul>
