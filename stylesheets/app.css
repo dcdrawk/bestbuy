@@ -9903,21 +9903,22 @@ review-summary h2 {
   width: 13px;
   height: 14px;
   top: 40%;
+  background-position: center;
 }
-/* line 437, ../scss/app.scss */
+/* line 438, ../scss/app.scss */
 .dropdown.button.add-to-cart {
   font-size: 18px;
   padding: 20px 120px 20px 28px;
   margin-top: 4px;
   margin-bottom: 72px;
 }
-/* line 443, ../scss/app.scss */
+/* line 444, ../scss/app.scss */
 .dropdown.button.add-to-cart:after {
   right: 96px;
   top: 45%;
 }
 
-/* line 448, ../scss/app.scss */
+/* line 449, ../scss/app.scss */
 .button {
   color: #fff !important;
   font-weight: 400 !important;
@@ -9925,21 +9926,21 @@ review-summary h2 {
   border-radius: 4px;
   padding: 16px;
 }
-/* line 454, ../scss/app.scss */
+/* line 455, ../scss/app.scss */
 .button .arrow {
   display: inline;
   margin-left: 8px;
 }
 
-/* line 460, ../scss/app.scss */
+/* line 461, ../scss/app.scss */
 star-rating {
   font-size: 20px;
 }
-/* line 462, ../scss/app.scss */
+/* line 463, ../scss/app.scss */
 star-rating .star-full {
   color: #0087f2;
 }
-/* line 465, ../scss/app.scss */
+/* line 466, ../scss/app.scss */
 star-rating .star-empty {
   color: #4b5c66 !important;
 }
