@@ -2,7 +2,7 @@
 
 ## Installation
 
-To get everything up and running, run the following commands:
+To get everything up and running, clone this repo and run the following commands:
 
 `npm install`
 
