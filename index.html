@@ -1,0 +1,177 @@
+<!doctype html>
+<!--[if lt IE 9]> <html class="no-js lt-ie10 lt-ie9" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 9]> <html class="no-js lt-ie10" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" xmlns:fb="http://ogp.me/ns/fb#"> <!--<![endif]-->
+<!--[if !IE]-->
+<html class="no-js" lang="en" ng-app="testApp">
+<!--[endif]-->
+
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assessment Test</title>
+    <link rel="stylesheet" href="../stylesheets/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600' rel='stylesheet' type='text/css'>
+    
+    <!--[if lt IE 9]>
+        // Your IE8 stylesheet, see ie8-grid-support.css further below which
+        // needs to be included in the ie8.css before you write any custom
+        // IE8 rules (i.e. at the top of your ie8.css file). You might have
+        // to change the ".row" width to match your project.
+        <link rel="stylesheet" href="../stylesheets/ie8.css">
+
+        // Your first IE8 shim set, takes care of CSS, media queries and
+        // ES5 functions and methods support, see further below what's
+        // included in this file.
+        <script src="js/ie8-head.js"></script>
+    <![endif]-->
+  </head>
+  
+  <!--  set up the controller -->
+  <body ng-controller="TestController as test">
+  
+    <!-- heading -->
+    <div id="product-overview" class="row">
+      <div class="large-6 columns">
+        <img id="phone-img" src="imgs/phone-mockup-min.png">
+      </div>
+      <div id="product-info" class="large-6 columns">
+        <!-- brand -->
+        <h1 class="phone-brand">{{test.phone.brand}}</h1>
+        
+        <!-- name -->
+        <h2 class="phone-name">{{test.phone.name}}</h2>
+        
+        <!-- price -->
+<!--        <h2 class="phone-price">${{test.phone.price}}</h2>-->
+        
+        <quantity max="9" price="test.phone.price"></quantity>
+        
+        <div>
+          <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown add-to-cart">Add to cart</button>
+        </div>
+        
+        <div class="intro">
+          <star-rating rating="4"></star-rating>
+          <p>{{test.phone.summary}}</p>
+        </div>
+
+        <protection-plan></protection-plan>
+      </div>
+      
+      
+    </div>
+    
+    <!-- more details-->
+    <div id="more-details" class="row">
+      <a id="scrollBtn" href="#top-features">
+        <p>More Details</p>
+        <img src="imgs/more-details.png">
+      </a>
+    </div>
+    
+    <!-- Top Features-->
+    <div id="top-features" class="row">
+      <div class="heading-col">
+        <div id="features-heading" class="block-heading">
+          <h2>Top</h2>
+          <h2>Features</h2>
+        </div>
+        <img class="video-block-1" src="imgs/video-block-1.jpg">
+        <img class="video-block-2" src="imgs/video-block-2.jpg">
+      </div><!--
+   --><div id="features-list">
+        <div ng-repeat="col in test.phone.features track by $index" class="col-{{$index+1}}">
+          <div ng-repeat="item in col" class="feature">
+            <p class="feat-name">{{item.feature}}</p>
+            <p class="feat-description">{{item.description}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Detailed Specs -->
+    <div id="detailed-specs" class="row">
+      <div class="heading-col">
+        <img src="imgs/phone-overlay-min.png" class="phone-overlay">
+        <div id="specs-heading" class="block-heading">
+          <h2>Detailed</h2>
+          <h2>Specs</h2>
+        </div>
+      </div>
+      
+      <div id="specs-details" class="row">
+        <div class="col-1">
+          <p class="spec-category">General</p>
+          <div ng-repeat="spec in test.phone.specs.general">
+            <p class="spec-title">{{spec.title}}</p>
+            <p class="spec-info">{{spec.info}}</p>
+          </div>
+        </div><!--        
+        --><div class="col-2">
+          <p class="spec-category">Display</p>
+          <div ng-repeat="spec in test.phone.specs.display">
+            <p class="spec-title">{{spec.title}}</p>
+            <p class="spec-info">{{spec.info}}</p>
+          </div>
+          
+        </div><!--        
+        --><div class="col-3">
+          <img class="specs-img" src="imgs/phone-image.jpg">
+        </div><!--        
+        --><div class="col-1">
+          <p class="spec-category">Body</p>
+          <div ng-repeat="spec in test.phone.specs.body">
+            <p class="spec-title">{{spec.title}}</p>
+            <p class="spec-info">{{spec.info}}</p>
+          </div>
+          <a id="specs-more" href="#a" class="button">See More Specs<img src="imgs/arrow-right.png" class="arrow"></a>
+        </div><!--        
+        --><div class="col-2">
+          <p class="spec-category">Sound</p>
+          <div ng-repeat="spec in test.phone.specs.sound">
+            <p class="spec-title">{{spec.title}}</p>
+            <p class="spec-info">{{spec.info}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+    <!-- Reviews -->
+    <div id="reviews" class="row">
+      <div class="heading-col">
+        <div id="reviews-heading" class="block-heading">
+          <h2>Read</h2>
+          <h2>Reviews</h2>
+        </div>      
+      </div>
+      <div id="reviews-overall" class="row">
+        <review-summary score="8"></review-summary><!--
+        --><div id="reviews-list">
+          <div class="review" ng-repeat="review in test.phone.reviews">
+            <star-rating rating="review.overall"></star-rating>
+            <div class="left-col">
+              <h3 class="review-title">{{review.title}}</h3>
+              <p class="review-author-info"><span class="review-author">{{review.author}}</span> on {{review.date}}</p>
+              <p class="review-full">{{review.review}}</p>
+            </div><!--
+            --><div class="right-col">
+              <bar-ratings value="review.value" price="review.price" quality="review.quality"></bar-ratings>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/test.js"></script>
+    <script src="js/ie8.js"></script>
+  </body>
+</html>

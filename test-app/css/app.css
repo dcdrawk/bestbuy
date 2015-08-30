@@ -3,17 +3,17 @@ Error: File to import not found or unreadable: foundation/functions.
         on line 58 of scss/_settings.scss
         from line 1 of scss/app.scss
 
-53: body{
-54:   background-color: $light-grey;
-55: }
-56: 
-57: body, h1, h2, h3, p, .button{
-58:   color: $primary-color;
-59:   font-family: $open-sans;
-60: }
-61: 
-62: h1{
-63:   font-weight:700;
+53: $pip-color: #a5adb2;
+54: 
+55: body{
+56:   background-color: $light-grey;
+57: }
+58: 
+59: body, h1, h2, h3, h4, p, .button{
+60:   color: $primary-color;
+61:   font-family: $open-sans;
+62: }
+63: 
 
 Backtrace:
 scss/_settings.scss:58
@@ -67,4 +67,4 @@ c:/Ruby21/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: foundation/functions.\A         on line 58 of scss/_settings.scss\A         from line 1 of scss/app.scss\A \A 53: body{\A 54:   background-color: $light-grey;\A 55: }\A 56: \A 57: body, h1, h2, h3, p, .button{\A 58:   color: $primary-color;\A 59:   font-family: $open-sans;\A 60: }\A 61: \A 62: h1{\A 63:   font-weight:700;"; }
+  content: "Error: File to import not found or unreadable: foundation/functions.\A         on line 58 of scss/_settings.scss\A         from line 1 of scss/app.scss\A \A 53: $pip-color: #a5adb2;\A 54: \A 55: body{\A 56:   background-color: $light-grey;\A 57: }\A 58: \A 59: body, h1, h2, h3, h4, p, .button{\A 60:   color: $primary-color;\A 61:   font-family: $open-sans;\A 62: }\A 63: "; }
