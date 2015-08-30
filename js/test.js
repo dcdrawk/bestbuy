@@ -178,7 +178,7 @@ angular.module('testApp', [])
       scope: {
         rating: '='
       },
-      templateUrl: '../templates/star-rating.html',
+      templateUrl: 'templates/star-rating.html',
       link : function ($scope) {
         $scope.getNumber = function(num) {
           var numArray = new Array(num);
@@ -196,7 +196,7 @@ angular.module('testApp', [])
         max: '=',
         price: '='
       },
-      templateUrl: '../templates/quantity.html',      
+      templateUrl: 'templates/quantity.html',      
       link : function ($scope, $rootScope) {
         //set the default quanity to 1
         $scope.quantity = '1';
@@ -222,7 +222,7 @@ angular.module('testApp', [])
 //      scope: {
 //        prices: '='
 //      },
-      templateUrl: '../templates/protection-plan.html'
+      templateUrl: 'templates/protection-plan.html'
     }
   }])
   
@@ -233,7 +233,7 @@ angular.module('testApp', [])
       scope: {
         score: '='
       },
-      templateUrl: '../templates/review-summary.html'
+      templateUrl: 'templates/review-summary.html'
     };  
   })
   
@@ -246,7 +246,7 @@ angular.module('testApp', [])
         price: '=',
         quality: '='
       },
-      templateUrl: '../templates/bar-ratings.html',
+      templateUrl: 'templates/bar-ratings.html',
       link : function ($scope) {
         $scope.getNumber = function(num) {
           var numArray = new Array(num);
